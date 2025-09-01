@@ -20,7 +20,7 @@ a { color:#1a73e8; text-decoration:none; }
 function showTab(id){ var contents=document.getElementsByClassName('tab-content'); for(var i=0;i<contents.length;i++){ contents[i].style.display='none'; } document.getElementById(id).style.display='block'; animateSkills();}
 function animateSkills(){ var bars=document.getElementsByClassName('skill-bar'); for(var i=0;i<bars.length;i++){ bars[i].style.width=bars[i].getAttribute('data-width')+'%'; } }
 function downloadPage(){ var blob = new Blob([document.documentElement.outerHTML], {type:'text/html'}); var link = document.createElement('a'); link.href = URL.createObjectURL(blob); link.download = 'person_editable.html'; link.click(); }
-window.onload=function(){ showTab('bio'); };
+window.onload = function() { showTab('bio'); };
 </script>
 </head>
 <body>
@@ -32,17 +32,17 @@ window.onload=function(){ showTab('bio'); };
 <div class='tabs'>
 <div onclick="showTab('bio')">Bio</div><div onclick="showTab('hobbies')">Hobbies</div><div onclick="showTab('education')">Education</div><div onclick="showTab('work')">Work</div><div onclick="showTab('skills')">Skills</div><div onclick="showTab('social')">Social</div>
 </div>
-<div id='bio' class='tab-content' contenteditable='true'>COMPLETED BTECH</div>
+<div id='bio' class='tab-content' contenteditable='true'>CONPLETED BTECH</div>
 <div id='hobbies' class='tab-content' contenteditable='true'>FOOTBALL</div>
 <div id='education' class='tab-content' contenteditable='true'>BTECH</div>
-<div id='work' class='tab-content' contenteditable='true'>1 YEAR AT INFOSYS</div>
+<div id='work' class='tab-content' contenteditable='true'>ONE YERA AT INFOSYS</div>
 <div id='skills' class='tab-content'>
 </div>
 <div id='social' class='tab-content' contenteditable='true'>
-<a href='\Users\HP\Downloads\donald-duck-oled-na.jpg ' target='_blank'>Link 1</a><br>
-<a href='WEB DEVELOPEMENT' target='_blank'>Link 2</a><br>
-<a href='AOK	' target='_blank'>Link 3</a><br>
-<a href='J' download>Download CV</a>
+<a href='\Users\HP\Downloads\donald-duck-oled-na.jpg;C:\Users\HP\Downloads\cool-tom-na-1366x768.jpg' target='_blank'>Link 1</a><br>
+<a href='https://www.instagram.com/anubhav0_/' target='_blank'>Link 2</a><br>
+<a href='AA' target='_blank'>Link 3</a><br>
+<a href='S' download>Download CV</a>
 </div>
 <div style='text-align:center; margin-top:20px;'><button onclick='downloadPage()'>Save Changes</button></div>
 </div>
